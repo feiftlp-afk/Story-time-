@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>The Door That Should Not Exist</title>
+  <style>
+    body {
+      background-color: #E6CCFF;
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      line-height: 1.6;
+    }
+    h1 {
+      text-align: center;
+      color: #4B0082;
+    }
+    #story {
+      font-size: 16px;
+      white-space: pre-line;
+    }
+    button {
+      display: block;
+      margin: 30px auto;
+      padding: 10px 25px;
+      background-color: #8A2BE2;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #6A1FB3;
+    }
+  </style>
+</head>
+<body>
+
+<h1 id="title">The Door That Should Not Exist – Part 1</h1>
+
+<div id="story"></div>
+
+<button onclick="nextPart()">Next Page</button>
+
+<script>
+let part = 0;
+
+let parts = [
+`PART 1
+
+No one noticed the door at first.
+
+Not the teachers rushing to class. Not the students shouting in the corridors.
+
+It appeared silently between the library and the science lab, where there had always been a plain white wall.
+
+Ethan noticed it because he was late. He skidded to a stop and stared. There was a tall wooden door, dark brown, scratched as if by claws.
+
+“Do you see that?” he asked his friend Milo.
+
+Milo frowned at the wall. “There is no door.”
+
+But Ethan could see it clearly. And the air around it felt cold.`,
+
+`PART 2
+
+That night, Ethan dreamed of hallways that never ended and doors that whispered his name.
+
+The next day, the door was still there.
+
+When Ethan touched it, the world twisted. He and Milo fell into a strange city of stone and shadows.
+
+That was where they met Lyra, a girl with silver eyes.
+
+“This is the Between,” she said. “A place between worlds. And that door should not exist.”
+
+Behind her, something moved in the dark.`,
+
+`PART 3 – The Choice
+
+Ethan stared at the glowing door.
+
+“One of us must stay,” Lyra said.
+
+“I’ll do it,” Ethan said.
+
+But Lyra pushed Ethan and Milo through the door instead.
+
+They landed back in their school hallway.
+
+The door vanished, but Ethan felt a pull in his chest.
+
+“I don’t think we really escaped,” he said.`,
+
+`PART 4 – Echoes in the Hallways
+
+The school felt wrong now.
+
+Shadows moved without light.
+
+Lyra appeared again.
+
+“It’s learning,” she warned. “You must enter again.”
+
+A blue door opened.
+
+Together, they stepped through.`,
+
+`PART 5 – The City of Endless Shadows
+
+The sky was dark. Towers stretched endlessly.
+
+At the center stood the Core, guarded by the creature.
+
+“The doors are trapped,” Milo whispered.
+
+They focused their thoughts on home and safety.
+
+The doors glowed blue.`,
+
+`PART 6 – The First Strike
+
+The creature attacked.
+
+Shadows clawed at them.
+
+Light formed a shield.
+
+They pushed the darkness back into the Core.
+
+The city grew quiet.`,
+
+`PART 7 – The Cost of Victory
+
+“You are now bound to the Between,” Lyra said.
+
+They could return home, but the bond remained.
+
+They had become Watchers.
+
+Victory had a price.`,
+
+`PART 8 – Lessons in the Between
+
+Not all doors must be closed.
+
+Some must be guided.
+
+The Between taught them balance.
+
+“Every door is a choice,” Lyra said.`,
+
+`PART 9 – Shadows of the Past
+
+A red door pulsed.
+
+Someone in their world had opened a door wrongly.
+
+The danger was returning.
+
+“Some doors never truly close,” Ethan said.`,
+
+`PART 10 – The Guardian of Worlds
+
+They stabilized the red door.
+
+The city calmed.
+
+“You are Guardians now,” Lyra said.
+
+Ethan understood.
+
+Some doors reveal who you truly are.
+
+THE END.`
+];
+
+function nextPart() {
+  if (part < parts.length) {
+    document.getElementById("story").innerText = parts[part];
+    document.getElementById("title").innerText = "The Door That Should Not Exist – Part " + (part + 1);
+    part++;
+  } else {
+    document.getElementById("story").innerText = "You have reached the end of the story.";
+  }
+}
+
+nextPart();
+</script>
+
+</body>
+</html>
